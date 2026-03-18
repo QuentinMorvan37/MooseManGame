@@ -19,5 +19,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "MooseManGame"
+rootProject.name = "MooseMan the Game"
 include(":app")
+ 

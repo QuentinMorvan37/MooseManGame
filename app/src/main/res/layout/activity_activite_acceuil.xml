@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nom de l'Élan :"
+        android:textSize="20sp"/>
+
+    <EditText
+        android:id="@+id/editNomElan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Saisir le nom" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+        <ImageView
+            android:id="@+id/imgMale"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@mipmap/ic_launcher"
+            android:background="@drawable/cercle_jaune"
+            android:padding="10dp"/>
+        <ImageView
+            android:id="@+id/imgFemale"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@mipmap/ic_launcher"
+            android:padding="10dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+        <ImageView
+            android:id="@+id/imgFr"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@mipmap/ic_launcher"
+            android:background="@drawable/cercle_jaune"
+            android:padding="5dp"/>
+        <ImageView
+            android:id="@+id/imgEn"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@mipmap/ic_launcher"
+            android:padding="5dp"/>
+        <ImageView
+            android:id="@+id/imgEs"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@mipmap/ic_launcher"
+            android:padding="5dp"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="START"
+        android:layout_marginTop="30dp"
+        android:textSize="24sp"/>
+</LinearLayout>

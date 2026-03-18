@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/FondCuisine"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/cuisine_titre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cuisine_titre"
+        android:textSize="22sp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:shadowColor="#000000"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="1" />
+
+    <ImageView
+        android:id="@+id/elan_image"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/MooseMan"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="80dp"
+        android:layout_marginLeft="10dp" />
+
+    <FrameLayout
+        android:id="@+id/drawing_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/cuisine_titre"
+        android:layout_toRightOf="@id/elan_image"
+        android:layout_above="@+id/btn_donner"
+        android:layout_margin="15dp"
+        android:background="#A6FFFFFF" />
+
+    <Button
+        android:id="@+id/btn_donner"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="@string/bouton_donner"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp" />
+
+</RelativeLayout>
